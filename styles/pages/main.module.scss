@@ -1,0 +1,109 @@
+$normalFontSize: 30px;
+$normalWidth: 700px;
+$textFlipperFontSize: 22px;
+$textFlipperMargin: 10px;
+
+$normalWidthSmall: 360px;
+
+.mainPage {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+
+	.greeting {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h2 {
+			margin: auto;
+			font-size: $normalFontSize;
+			min-width: $normalWidth;
+		}
+	}
+
+	.textFlipper {
+		// here the total width of one element is -> textFlipperFontSize + 10px
+		height: $textFlipperFontSize + 10px;
+		overflow: hidden;
+		padding-top: 10px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.flipper {
+			animation: flip5 21s ease-in-out infinite;
+
+			li {
+				font-weight: 700;
+				display: block;
+				min-width: $normalWidth;
+
+				// here the total width of one element is -> textFlipperFontSize + 10px
+				font-size: $textFlipperFontSize;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@keyframes flip5 {
+0% {
+	margin-top: 160px;
+}
+10% {
+	margin-top: 80px
+}
+20% {
+	margin-top: 0px;
+}
+30% {
+	margin-top: -80px;
+}
+40% {
+	margin-top: -160px;
+}
+50% {
+	margin-top: -160px;
+}
+60% {
+	margin-top: -80px;
+}
+70% {
+	margin-top: 0px;
+}
+80% {
+	margin-top: 80px;
+}
+90% {
+	margin-top: 160px;
+}
+100% {
+	margin-top: 160px;
+}
+}
+
+@media screen and (max-width: 750px) {
+	.mainPage {
+		padding: 20px;
+		.greeting {
+			h2 {
+				min-width: $normalWidthSmall;
+			}
+		}
+
+		.textFlipper {
+			padding: 10px 10px 10px 15px;
+			.flipper {
+				li {
+					min-width: $normalWidthSmall;
+				}
+			}
+		}
+	}
+}
