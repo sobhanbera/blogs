@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root {
+	--header-height: 60px;
+}
+
+.light-mode {
+	--background: #f0edec;
+	--border: #e5e5e5;
+
+	--text: #2d2d2d;
+	--text-muted: #828282;
+
+	--theme-color: #ffffff;
+	--theme-invert-color: #000000;
+
+	--hover: #cfcfcf;
+}
+.dark-mode {
+	--background: #151515;
+	--border: #252525;
+
+	--text: #efefef;
+	--text-muted: #828282;
+
+	--theme-color: #000000;
+	--theme-invert-color: #ffffff;
+
+	--hover: #252525;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: JetBrains Mono, Karla, Roboto, Ubuntu, sans-serif;
+	font-size: 17px;
+
+	outline: none;
+	border: none;
+
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+
+	transition: all 0.3s ease-in-out;
+
+	color: var(--text);
+}
+
+html,
+body {
+	font-family: JetBrains Mono, Karla, Roboto, Ubuntu, sans-serif;
+    background-color: var(--background);
+
+	&.light {
+		background-color: #f0edec;
+		color: #2d2d2d;
+	}
+
+	&.dark {
+		background-color: #151515;
+		color: #efefef;
+	}
+}
+
+.main-content {
+    min-height: calc(50vh - var(--header-height));
+}
+
