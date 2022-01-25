@@ -9,7 +9,7 @@ const ThemeContextProvider = createContext<ThemeContextProviderProp>({
 	toggleTheme: () => { },
 })
 interface ThemeProviderProps {
-	children: React.ReactChildren
+	children: React.ReactNode
 }
 export default function ThemeProvider(props: ThemeProviderProps) {
 	const [theme, setTheme] = useState(true) // if theme is light than value is true else false
