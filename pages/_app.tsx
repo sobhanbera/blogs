@@ -7,14 +7,12 @@ import '../styles/globals.scss'
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider>
-			<>
+			<div className={'main-content'}>
 				<SimpleHeader />
 
-				<div className={'main-content'}>
-					<Component {...pageProps} />
-				</div>
-			</>
-		</ThemeProvider>
+				<Component {...pageProps} />
+			</div>
+		</ThemeProvider >
 	)
 }
 
