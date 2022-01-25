@@ -53,7 +53,7 @@ These are some easy step-by-step guide to get started with open-source contribut
 -   Choose a project (repository) of your choice to contribute.
 -   Find a feature/bug to work on. Or get started with “good-first-issue” tagged issues in that repository. Good-first-issues are beginner-friendly issues that could be used to understand the codebase at the initial stages of contributions.
 -   Fork the repository — Press the top-right button, which says **Fork** in that GitHub repository.
-    
+
 !["Forking a repository"](https://cdn-images-1.medium.com/max/1024/0*XSZdK12oB6quAhUg)
 
 By doing this, an exact copy of the same repository will be created in your personal GitHub account. With name \[YOUR_GITHUB_USERNAME / REPOSITORY_NAME\]
@@ -64,16 +64,16 @@ By doing this, an exact copy of the same repository will be created in your pers
 
 This step is to get the forked repository on your local machine. Launch any terminal application and execute the following lines of code:
 
-\`\`\`sh
-git clone URL_OF_YOUR_FORKED_REPO
+\`\`\`shell
+$ git clone URL_OF_YOUR_FORKED_REPO
 \`\`\`
 
 !["Cloning a repository"](https://cdn-images-1.medium.com/max/379/0*11EfLQe6c9B9KMBD)
 
 Like if I have forked [VS Code](https://github.com/microsoft/vscode) repository from GitHub and want to clone it then I will execute the below command:
 
-\`\`\`sh
-git clone https://github.com/sobhanbera/vscode
+\`\`\`shell
+$ git clone https://github.com/sobhanbera/vscode
 \`\`\`
 
 Since my GitHub Username is [sobhanbera](https://github.com/sobhanbera).
@@ -83,11 +83,9 @@ Since my GitHub Username is [sobhanbera](https://github.com/sobhanbera).
 Open the project in your favourite code editor. And update the code as it is needed. And when this is completed, execute the following command to make sure your code is saved and committed properly.
 
 \`\`\`shell
-git add .
-\`\`\`
+$ git add .
 
-\`\`\`shell
-git commit -m “first commit”
+$ git commit -m "first commit"
 \`\`\`
 
 -   Push the updated code to the forked repo.
@@ -95,55 +93,7 @@ git commit -m “first commit”
 Now as the codebase is saved with the new code. Let’s push (by pushing the code, we are making sure that the code also changes in the main repository) the updated code to the main project repository.
 
 \`\`\`shell
-git push
-\`\`\`
-
-\`\`\`js
-const value = {
-    foo: 'bar',
-}
-// comment is here
-/**
- * multiline comment is here
- **/
-const va = [1, "string", true, false, 1.231 + 12 - 9 * 7 / ^0]
-console.log("value:", value)
-\`\`\`
-
-\`\`\`css
-.markdown pre code {
-    display: inline;
-    max-width: initial;
-    padding: 0;
-    margin: 0;
-    overflow: initial;
-    font-size: 100%;
-    line-height: inherit;
-    word-wrap: normal;
-    white-space: pre;
-    border: 0;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background-color: transparent;
-}
-\`\`\`
-
-\`\`\`cpp
-#include <iostream>
-
-int main () {
-    int i = 0;
-    for(int j = 0; j < 1; ++j) {
-        cin >> i;
-    }
-    return 0;
-}
-\`\`\`
-
-\`\`\`python
-import random
-
-print(80 + 90 - (random() * 90) / 7 ^ 5)
+$ git push
 \`\`\`
 
 -   Create a Pull-Request.
@@ -193,10 +143,6 @@ There are many open-source projects which are hosted publicly on different platf
 | Atom                  | JavaScript         | 16533 | 56150  | 723           | [atom/atom](https://github.com/atom/atom)                          |
 | Redux                 | TS, JS             | 14911 | 56851  | 45            | [reduxjs/redux](https://github.com/reduxjs/redux)                  |
 | Oh My Zsh             | Shell              | 22901 | 134666 | 630           | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)              |
-
-<a href="https://medium.com/media/f128b62a883ce20abf12bc25820abc6e/href>
-https://medium.com/media/f128b62a883ce20abf12bc25820abc6e/href
-</a>
 
 All the above projects are hosted in GitHub. There are many other projects based on every topic every language and every technology.
 
