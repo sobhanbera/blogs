@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     height: var(--header-height);
+	border-bottom: 1px solid var(--color-border-primary);
 
     .headerMain {
         max-width: 1100px;
