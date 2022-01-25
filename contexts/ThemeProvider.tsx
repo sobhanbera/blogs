@@ -29,7 +29,6 @@ export default function ThemeProvider(props: ThemeProviderProps) {
 		// since it won't take from the native file system
 		if (theme) document.body.classList.value = 'light'
 		else document.body.classList.value = 'dark'
-		console.log(theme)
 	}, [theme])
 
 	const toggleTheme = () => setTheme(value => !value)
